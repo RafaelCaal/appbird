@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div *ngFor="let ave of avesData">
+    <img [src]="ave.sono.images[1]" alt="Nombre ave">
+    <p>Familia: {{ ave.en }}</p>
+    <p>Nombre: {{ ave.gen }} {{ ave.sp }}</p>
+    <p>Ubicación: {{ ave.loc }}</p>
+    <p>Descubridor: {{ ave.rec }}</p>
+    <hr>
+  </div>
+</body>
+</html>
+  
